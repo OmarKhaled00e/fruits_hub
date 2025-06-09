@@ -7,7 +7,7 @@ static const String routeName = 'onBoarding';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: OnBoardingViewBody(),
+      body: SafeArea(child: OnBoardingViewBody()),
     );
   }
 }

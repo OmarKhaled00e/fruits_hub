@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fruits_hub/core/helper_functions/on_generate_routes.dart';
 import 'package:fruits_hub/features/splash/presentation/views/splash_view.dart';
+import 'package:fruits_hub/generated/l10n.dart';
 
-import 'generated/l10n.dart' show S;
+
 
 void main() {
   runApp(const FruitHub());

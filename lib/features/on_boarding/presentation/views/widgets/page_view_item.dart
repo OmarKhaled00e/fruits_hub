@@ -30,6 +30,10 @@ class PageViewItem extends StatelessWidget {
                 right: 0,
                 child: SvgPicture.asset(image),
               ),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text('تخط'),
+              ),
             ],
           ),
         ),

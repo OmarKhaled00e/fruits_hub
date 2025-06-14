@@ -76,7 +76,3 @@ class PageViewItem extends StatelessWidget {
     );
   }
 }
-
-
-
-//  Padding(padding: const EdgeInsets.all(16), child: Text('تخط')),

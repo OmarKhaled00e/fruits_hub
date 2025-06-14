@@ -30,7 +30,9 @@ class OnBoardingPageView extends StatelessWidget {
               ),
               Text(
                 'Fruit',
-                style: TextStyles.bold23.copyWith(color: AppColors.primary),
+                style: TextStyles.bold23.copyWith(
+                  color: AppColors.primaryColor,
+                ),
               ),
             ],
           ),

@@ -37,14 +37,14 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: OnBoardingPageView(
-          pageController: pageController,
-        )),
+        Expanded(child: OnBoardingPageView(pageController: pageController)),
         DotsIndicator(
           dotsCount: 2,
           decorator: DotsDecorator(
-            activeColor: AppColors.primary,
-            color: currentPage == 1 ? AppColors.primary : AppColors.primary.withOpacity(0.5),
+            activeColor: AppColors.primaryColor,
+            color: currentPage == 1
+                ? AppColors.primaryColor
+                : AppColors.primaryColor.withOpacity(0.5),
           ),
         ),
         SizedBox(height: 29),
@@ -55,11 +55,12 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           maintainState: true,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
-            child: CustomButton(onPressed: () {
-              Navigator.of(context).pushReplacementNamed(
-                LoginView.routeName
-              );
-            }, text: 'ابدأ الان'),
+            child: CustomButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed(LoginView.routeName);
+              },
+              text: 'ابدأ الان',
+            ),
           ),
         ),
         SizedBox(height: 43),
